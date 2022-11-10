@@ -12,7 +12,7 @@ class WeatherPage extends StatefulWidget {
 }
 
 class _WeatherPageeState extends State<WeatherPage> {
-  late double temperature = 0;
+  late String temperature = "";
   late String weatherIcon = "";
   late String cityName = "";
   late bool isLoading = true;
@@ -26,7 +26,7 @@ class _WeatherPageeState extends State<WeatherPage> {
   void updateUI() async {
     WeatherService data = await widget.weatherService.getWeatherData();
     setState(() {
-      temperature = data.temperature;
+      temperature = (data.temperature - 273.15).toStringAsFixed(2);
       weatherIcon = data.weatherIcon;
       cityName = data.cityName;
       isLoading = false;
