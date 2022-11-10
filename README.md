@@ -20,5 +20,5 @@ DevTools `2.15.0`
 * Mengisi default value di setiap state pada `_WeatherPageeState` dan setiap method di `WeatherService` untuk antisipasi ketika `getWeatherData()` gagal mengambil data untuk menghindari error not initialized.
 * temperature balikan dari API berbentuk kelvin, perlu di ubah ke celcius 
 
-Best practice :
+## Best practice :
 * Image diload dalam bentuk static (di download dan di masukan ke asset), untuk menghindari `Connection terminated during handshake` error [https://stackoverflow.com/a/61073515/8423291](https://stackoverflow.com/a/61073515/8423291)  
