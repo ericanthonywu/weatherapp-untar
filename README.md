@@ -21,4 +21,4 @@ DevTools `2.15.0`
 * temperature balikan dari API berbentuk kelvin, perlu di ubah ke celcius 
 
 Best practice :
-* Image diload dalam bentuk static (di download dan di masukan ke asset), karena berpotensi terkena `Connection terminated during handshake` error [https://stackoverflow.com/a/61073515/8423291](https://stackoverflow.com/a/61073515/8423291)  
+* Image diload dalam bentuk static (di download dan di masukan ke asset), untuk menghindari `Connection terminated during handshake` error [https://stackoverflow.com/a/61073515/8423291](https://stackoverflow.com/a/61073515/8423291)  
