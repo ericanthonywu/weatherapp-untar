@@ -18,3 +18,4 @@ DevTools `2.15.0`
 * `_WeatherPageeState` mengambil data pada class `WeatherService` di method `getWeatherData()` kemudian mengisiinya di `setState`.
 * Menambahkan state baru dengan nama `isLoading` sebagai indikator ketika mengambil data untuk menghindari error not initialized.
 * Mengisi default value di setiap state pada `_WeatherPageeState` dan setiap method di `WeatherService` untuk antisipasi ketika `getWeatherData()` gagal mengambil data untuk menghindari error not initialized.
+* temperature balikan dari API berbentuk kelvin, perlu di ubah ke celcius 
