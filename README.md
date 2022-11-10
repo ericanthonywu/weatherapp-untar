@@ -1,17 +1,17 @@
 # Untar Weather App Project
 
-### Flutter Version: 3.3.8
+### Flutter Version: `3.3.8`
 
 ## Tools
-Dart Version: 2.18.4
+Dart Version: `2.18.4`
 
-DevTools 2.15.0
+DevTools `2.15.0`
 
 ## Masalah pada code yang terdeteksi :
 * Kesalahan pada concatenate string ketika menggenerate url di `weather.dart:21`.
 * State di `_WeatherPageeState` tidak di initialized dengan data dari `WeatherService` yang harus diisi terlebih dahulu dengan `getWeatherData()`.
 
-Solusi yang di berikan :
+## Solusi yang di berikan :
 * Pada class `WeatherService` di method `getWeatherData()` -> mengreturn class yang sudah diisi dengan data yang sudah di get di weather api.
 * Memperbaiki kesalahan syntax ketika concatenate string ketika menggenerate url di `weather.dart:21`.
 * `_WeatherPageeState` mengambil data pada class `WeatherService` di method `getWeatherData()` kemudian mengisiinya di `setState`.
