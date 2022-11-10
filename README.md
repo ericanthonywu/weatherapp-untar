@@ -1,8 +1,9 @@
 # Untar Weather App Project
 
-### Flutter Version: `3.3.8`
 
-## Tools
+## Flutter and dart version used
+Flutter Version: `3.3.8`
+
 Dart Version: `2.18.4`
 
 DevTools `2.15.0`
