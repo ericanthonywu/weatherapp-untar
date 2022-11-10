@@ -14,6 +14,7 @@ DevTools `2.15.0`
 * State di `_WeatherPageeState` tidak di initialized dengan data dari `WeatherService` yang harus diisi terlebih dahulu dengan `getWeatherData()`
 
 ## Solusi yang di berikan :
+* Menambahkan location permission sebelum mengambil location user
 * Pada class `WeatherService` di method `getWeatherData()` -> mengreturn class yang sudah diisi dengan data yang sudah di get di weather api
 * Memperbaiki kesalahan syntax ketika concatenate string ketika menggenerate url di `weather.dart:21`
 * `_WeatherPageeState` mengambil data pada class `WeatherService` di method `getWeatherData()` kemudian mengisiinya di `setState`
