@@ -1,16 +1,19 @@
-# weather_project
+# Untar Weather App Project
 
-A new Flutter project.
+### Flutter Version: 3.3.8
 
-## Getting Started
+## Tools
+Dart Version: 2.18.4
 
-This project is a starting point for a Flutter application.
+DevTools 2.15.0
 
-A few resources to get you started if this is your first Flutter project:
+## Masalah pada code yang terdeteksi :
+* Kesalahan pada concatenate string ketika menggenerate url di `weather.dart:21`.
+* State di `_WeatherPageeState` tidak di initialized dengan data dari `WeatherService` yang harus diisi terlebih dahulu dengan `getWeatherData()`.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Solusi yang di berikan :
+* Pada class `WeatherService` di method `getWeatherData()` -> mengreturn class yang sudah diisi dengan data yang sudah di get di weather api.
+* Memperbaiki kesalahan syntax ketika concatenate string ketika menggenerate url di `weather.dart:21`.
+* `_WeatherPageeState` mengambil data pada class `WeatherService` di method `getWeatherData()` kemudian mengisiinya di `setState`.
+* Menambahkan state baru dengan nama `isLoading` sebagai indikator ketika mengambil data untuk menghindari error not initialized.
+* Mengisi default value di setiap state pada `_WeatherPageeState` dan setiap method di `WeatherService` untuk antisipasi ketika `getWeatherData()` gagal mengambil data untuk menghindari error not initialized.

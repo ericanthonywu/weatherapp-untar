@@ -4,9 +4,9 @@ import 'package:http/http.dart' as http;
 import 'package:weather_project/location.dart';
 
 class WeatherService {
-  late double temperature;
-  late String weatherIcon;
-  late String cityName;
+  late double temperature = 0;
+  late String weatherIcon = "";
+  late String cityName = "";
 
   static const API_KEY = 'f52ab890de4ab72bff25fb9b64404f37';
 
